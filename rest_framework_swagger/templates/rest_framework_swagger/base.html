@@ -16,34 +16,13 @@
     <body>
         {% block body %}
         {% block header %}
-            <div id="header">
-                <div class="swagger-ui-wrap">
-                    {% block branding %}
-                        <a id="logo" href="http://swagger.wordnik.com">swagger</a>
-                    {% endblock %}
-                    {% block api_selector %}
-                        <form id="api_selector">
-                            <div class="input icon-btn">
-                                <img id="show-wordnik-dev-icon" src="{% static 'rest_framework_swagger/images/wordnik_api.png' %}" title="Show Wordnik Developer Apis">
-                            </div>
-                            <div class="input"><input placeholder="http://example.com/api" id="input_baseUrl" name="baseUrl" type="text"/></div>
-                            <div class="input"><input placeholder="api_key" id="input_apiKey" name="apiKey" type="text"/></div>
-                            <div class="input"><a id="explore" href="#">Explore</a></div>
-                        </form>
-                    {% endblock %}
-                </div>
-            </div>
         {% endblock %}
 
         {% block django_rest_swagger %}
             <div id="django-rest-swagger">
-                <div class="swagger-ui-wrap">
-                    <a href="https://github.com/marcgibbons/django-rest-swagger/">Django REST Swagger</a>
-                </div>
             </div>
         {% endblock %}
 
-        <div id="message-bar" class="swagger-ui-wrap"></div>
         <div id="swagger-ui-container" class="swagger-ui-wrap"></div>
 
         <script>
